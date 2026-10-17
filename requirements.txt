@@ -1,0 +1,6 @@
+# Залежності hotm_uk.py:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+openpyxl==3.1.5
+
+# Лише для перемальовування артів dist_template\make_art.py / make_official_art.py (за потреби):
+# pillow
+# numpy

@@ -1,0 +1,30 @@
+# локальні резервні копії uk_translation.xlsx (історію веде git)
+backup/
+__pycache__/
+*.tmp
+
+# віртуальне середовище Python (відтворюється з requirements.txt)
+.venv/
+
+# згенеровані звіти й артефакти
+changes/
+dist/
+build_warnings.txt
+build_long_ui.txt
+terms_report.xlsx
+
+# робочі батчі ШІ-перекладу й звіти імпорту (результат — у uk_translation.xlsx і text/)
+batches/
+
+# тимчасові файли Excel
+~$*
+
+# звіт build про можливі русизми (генерується)
+build_suspects.txt
+
+# архів із копією репозиторію друзів (уже влито)
+HotM_Ukrainian_repo_archive.zip
+
+# офіційні арти Arcen — не публікуємо (make_official_art.py бере їх звідси локально)
+dist_template/art_src/
+

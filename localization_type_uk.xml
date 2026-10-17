@@ -1,0 +1,13 @@
+	<localization_type id="Ukrainian" display_name="Українська" filename="Ukrainian" steam_lang_id="ukrainian" epic_lang_id="ua-UA"
+		description=""
+		number_decimal_separator="," number_group_separator="." uses_24_hour_clock="true"
+		column_style_a_left="&lt;indent=1&gt;" column_style_a_right="&lt;indent=66&gt;" column_style_a_right_sub="&lt;indent=70&gt;"
+		column_style_b_left="&lt;indent=1&gt;" column_style_b_right="&lt;indent=96&gt;"
+		column_style_c_left="&lt;indent=10&gt;" column_style_c_right="&lt;indent=106&gt;"
+		column_style_d_left="&lt;indent=5&gt;" column_style_d_right="&lt;indent=50&gt;"
+		line_height_a="&lt;line-height=10%&gt;"
+		line_height_b="&lt;line-height=80%&gt;"
+		line_height_c="&lt;line-height=90%&gt;"
+		line_height_d="&lt;line-height=50%&gt;"
+		line_height_e="&lt;line-height=8%&gt;"
+		table_a1="&lt;pos=10&gt;" table_a2="&lt;pos=90&gt;" table_a3="&lt;pos=170&gt;"/>

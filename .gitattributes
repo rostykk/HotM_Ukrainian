@@ -1,0 +1,6 @@
+# Без перетворення кінців рядків: install.sh має лишатися з LF, .bat — з CRLF.
+* -text
+*.xlsx binary
+*.png binary
+*.webp binary
+*.zip binary
