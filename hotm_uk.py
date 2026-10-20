@@ -1273,8 +1273,14 @@ STYLE_INSTRUCTIONS = (
     "plain, lively, idiomatic Ukrainian with the SAME meaning and the same register as the original (noir "
     "narration, dry humour, distinct character voices, UI brevity). Keep glossary terms, {placeholders}, <tags>, "
     "the number of line breaks and leading/trailing spaces; address the player with «ви»; game points are "
-    "«одиниці», never «очки». Return ONLY JSON with the items you changed: {\"<id>\": \"new Ukrainian text\"}; "
-    "omit items that are already fine.")
+    "«одиниці», never «очки». Also check every sentence against the syntax checklist in STYLE_uk.md "
+    "(section «Синтаксис: 12 хиб»): needless «щоб» before an infinitive or where English 'to' means a result; "
+    "chains of subordinate clauses; calqued questions; filler pronouns («те, що», «той факт, що») and "
+    "possessives («свій», «ваш» with body parts, relatives, belongings); «перш ніж» where 'before' means "
+    "«щоб не / інакше»; «але» without contrast and «і» where 'and' means «але»; needless «можете / може»; "
+    "a noun repeated by a pronoun; participial phrases with a different subject; literal English idioms; "
+    "detached modifiers that imply a cause; «речі» for 'things'. Return ONLY JSON with the items you changed: "
+    "{\"<id>\": \"new Ukrainian text\"}; omit items that are already fine.")
 REVIEW_INSTRUCTIONS = (
     "You are the terminology editor for the Ukrainian translation of Heart of the Machine. For every item, "
     "'uk' is the current translation of 'en'; 'terms' lists glossary terms that must be used (inflect "
