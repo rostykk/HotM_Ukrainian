@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+	<mod_data ver="1" color_for_display="#FFD500" author="RosKud" is_framework_mod="false"
+		required_mods="" required_expansions=""/>
+
+	<lang id="English" name="UkrVoice (prototype)" abbreviation="UKV"
+		description="Prototype of a voice-over for the Ukrainian translation. Logs every event, NPC dialog, key message and handbook entry the game shows, and reads it aloud with a Windows voice (English original) to verify that the right lines are detected."
+		translation_note="Prototype."/>
+
+	<lang id="Ukrainian" name="Озвучка українізатора (прототип)" abbreviation="UKV"
+		description="Прототип озвучки українізатора. Записує в лог кожну подію, розмову з NPC, ключове повідомлення й статтю довідника, які показала гра, і читає їх голосом Windows (англійський оригінал), щоб перевірити, що мод ловить правильні рядки."
+		translation_note="Прототип."/>
+
+</root>

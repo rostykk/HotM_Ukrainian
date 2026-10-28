@@ -162,9 +162,21 @@ def protect_attr_whitespace(text):
     return "".join(out)
 
 
+_GLUED_ATTR = re.compile(r'"(?=[A-Za-z_][\w.:-]*\s*=\s*")')
+
+
 def parse_xml_file(path):
-    raw = open(path, "rb").read().decode("utf-8-sig")
-    return ET.fromstring(protect_attr_whitespace(raw))
+    raw = protect_attr_whitespace(open(path, "rb").read().decode("utf-8-sig"))
+    try:
+        return ET.fromstring(raw)
+    except ET.ParseError:
+        # Arcen інколи пише атрибути без пробілу: id="X"text="..." — їхній парсер це прощає, ElementTree ні.
+        fixed = _GLUED_ATTR.sub('" ', raw)
+        if fixed == raw:
+            raise
+        root = ET.fromstring(fixed)
+        print(f"  (виправлено склеєні атрибути в {os.path.basename(path)})")
+        return root
 
 
 def truthy(v):

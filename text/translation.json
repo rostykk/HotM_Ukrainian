@@ -3017,10 +3017,10 @@
   "Файл": "GameData\\Configuration\\0_Language\\Lng_Actions.xml"
  },
  "RotarySpin_Rules": {
-  "English": "Each spin adds {0} Armor Cracker, up to {1} spin. Gains 1 per attack. Moving resets it to zero, and unspent action points drain it at the end of the turn.",
-  "Українська": "Кожне обертання додає {0} до пробивання броні, максимум обертів — {1}. Збільшується на 1 за кожну атаку. Переміщення скидає показник до нуля, а невитрачені одиниці дії зменшують його наприкінці ходу.",
+  "English": "Each spin adds {0} Armor Cracker, up to {1} spin. Gains 1 per attack. Moving resets it to zero, and ending a turn with any action points unspent loses 1.",
+  "Українська": "Кожне обертання додає {0} до пробивання броні, максимум обертів — {1}. Збільшується на 1 за кожну атаку. Переміщення скидає показник до нуля, а якщо завершити хід із невитраченими одиницями дії, він зменшується на 1.",
   "Статус": "mt",
-  "Перекладач": "gemini",
+  "Перекладач": "claude",
   "Примітка для перекладача": "Shown small under the Rotary Spin numbers. {0} is the Armor Cracker per spin; {1} is the maximum spin.",
   "Файл": "GameData\\Configuration\\0_Language\\Lng_Actions.xml"
  },
@@ -3603,6 +3603,14 @@
   "Статус": "mt",
   "Перекладач": "claude-style",
   "Примітка для перекладача": "Keep as brief as possible, ideally.  This will be a keybind like Ctrl that shows here.",
+  "Файл": "GameData\\Configuration\\0_Language\\Lng_Actions.xml"
+ },
+ "NothingIsTargetingThis": {
+  "English": "Nothing is targeting this.",
+  "Українська": "Ніхто не тримає це на прицілі.",
+  "Статус": "mt",
+  "Перекладач": "claude",
+  "Примітка для перекладача": "Brief note at the mouse cursor when the player presses the next-attacker hotkey, but no enemy is currently aiming at the selected unit or structure.",
   "Файл": "GameData\\Configuration\\0_Language\\Lng_Actions.xml"
  },
  "CannotDeleteNetworkSource": {
@@ -12451,7 +12459,7 @@
  },
  "ThisCouldBeYourTargetOutcome_Instructions": {
   "English": "If you wish to select this as your target, use {0} now.",
-  "Українська": "Щоб обрати цей результат ціллю, використайте {0} зараз.",
+  "Українська": "Хочете зробити цей результат ціллю? {0} зараз.",
   "Статус": "mt",
   "Перекладач": "claude+opus-06",
   "Файл": "GameData\\Configuration\\0_Language\\Lng_Common.xml"
@@ -17662,7 +17670,7 @@
  },
  "DebateTour_Bonus_Text2": {
   "English": "They give powerful score multipliers for this debate AND permanent upgrades for future debates.",
-  "Українська": "Вони дають потужні множники рахунку в цих дебатах І постійні покращення для майбутніх дебатів.",
+  "Українська": "Вони дають потужні множники рахунку в цих дебатах, а ще й постійні покращення для майбутніх дебатів.",
   "Статус": "mt",
   "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\0_Language\\Lng_MinorMenus.xml"
@@ -17756,6 +17764,13 @@
   "Українська": "Ви не дали дітям утілити смертоносний план, але багатьом союзникам це не сподобалося.",
   "Статус": "mt",
   "Перекладач": "claude+opus-03",
+  "Файл": "GameData\\Configuration\\0_Language\\Lng_MinorMenus.xml"
+ },
+ "ProjectFailure_AllAGIResearchersDead": {
+  "English": "All of the AGI researchers are dead.",
+  "Українська": "Усі дослідники ЗШІ загинули.",
+  "Статус": "mt",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\0_Language\\Lng_MinorMenus.xml"
  },
  "ProjectWarning_SoftFailure": {
@@ -23184,7 +23199,7 @@
  },
  "ActorBadge|InspiredByTrauma|description": {
   "English": "Permanently adds a powerful intimidation flat amount AND multiplier to a single specific android.",
-  "Українська": "Назавжди дає одному конкретному андроїду потужну фіксовану надбавку до залякування І множник залякування.",
+  "Українська": "Назавжди дає одному конкретному андроїду потужну фіксовану надбавку до залякування, а на додачу ще й множник залякування.",
   "Статус": "mt",
   "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_ActorBadge\\ActorBadges_General.xml"
@@ -33122,10 +33137,10 @@
   "Файл": "GameData\\Configuration\\1_CityTimelineDoomType\\CityTimelineDoomTypes.xml"
  },
  "CityTimelineDoomType|InternationalScrutiny|doom_event|5|description": {
-  "English": "Ectothracity is sending in troops in general, as well occasional sappers who are targeting both the fusion and fission reactors around the city.\nFusion reactors are not any more explosive than any other building, but fission reactors leave a massive hole when they blow.",
+  "English": "Ectothracity is sending in troops in general, as well as occasional sappers who are targeting both the fusion and fission reactors around the city.\nFusion reactors are not any more explosive than any other building, but fission reactors leave a massive hole when they blow.",
   "Українська": "Ектотрасіті засилає звичайні війська, а подекуди й саперів, що полюють на термоядерні реактори й реактори поділу по всьому місту.\nТермоядерні реактори вибухають не сильніше за інші будівлі, а от реактори поділу лишають по собі величезну вирву.",
   "Статус": "mt",
-  "Перекладач": "claude+claude-style",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_CityTimelineDoomType\\CityTimelineDoomTypes.xml"
  },
  "CityTimelineDoomType|InternationalScrutiny|doom_event|6|display_name": {
@@ -33484,6 +33499,20 @@
   "Українська": "Ворсібер відкрив тоталізатор: хто ж вибереться на вершину закривавленої купи?",
   "Статус": "mt",
   "Перекладач": "claude",
+  "Примітка для перекладача": "This was nanotech, but has been changed to the raptors arc.",
+  "Файл": "Expansions\\DLC1_Kinship\\1_CityTimelineDoomType\\Dooms_DLC1.xml"
+ },
+ "CityTimelineDoomType|TheFracturing|doom_alt_event|10CCA|display_name": {
+  "English": "The Agreement",
+  "Українська": "Угода",
+  "Статус": "auto",
+  "Примітка для перекладача": "This was nanotech, but has been changed to the raptors arc.",
+  "Файл": "Expansions\\DLC1_Kinship\\1_CityTimelineDoomType\\Dooms_DLC1.xml"
+ },
+ "CityTimelineDoomType|TheFracturing|doom_alt_event|10CCA|description": {
+  "English": "All is well. Vorsiber won't be bothering you anymore.",
+  "Українська": "Усе гаразд. Ворсібер вас більше не турбуватиме.",
+  "Статус": "auto",
   "Примітка для перекладача": "This was nanotech, but has been changed to the raptors arc.",
   "Файл": "Expansions\\DLC1_Kinship\\1_CityTimelineDoomType\\Dooms_DLC1.xml"
  },
@@ -41658,7 +41687,7 @@
   "Файл": "Expansions\\DLC1_Kinship\\1_MachineJob\\Jobs_DLC1.xml"
  },
  "MachineJob|ReinforcedPen|description": {
-  "English": "Private spaces for the unreasonably-strong: dinosaurs and parkour bears.",
+  "English": "Private spaces for the unreasonably-strong: dinosaurs and Parkour Bears.",
   "Українська": "Окремі приміщення для надміру сильних: динозаврів і ведмедів-паркуристів.",
   "Статус": "mt",
   "Перекладач": "claude",
@@ -64271,10 +64300,10 @@
   "Файл": "GameData\\Configuration\\1_NPCEvent\\Contemplation_Ch2.xml"
  },
  "NPCEvent|Cont_ContactAnExoCorp|choice|1|strategy_tip": {
-  "English": "They are certain to be very interested to talk with any AGI, but especially one exists within Vorsiber territory.",
+  "English": "They are certain to be very interested to talk with any AGI, but especially one that exists within Vorsiber territory.",
   "Українська": "Вони, безперечно, залюбки поговорять із будь-яким ЗШІ, а надто з тим, що існує на території Ворсіберу.",
   "Статус": "mt",
-  "Перекладач": "claude+opus-18",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_NPCEvent\\Contemplation_Ch2.xml"
  },
  "NPCEvent|Cont_ContactAnExoCorp|choice|2|display_name": {
@@ -72064,10 +72093,10 @@
   "Файл": "GameData\\Configuration\\1_NPCEvent\\Contemplation_T3s.xml"
  },
  "NPCEvent|Cont_CCA_ScienceA|strategy_tip": {
-  "English": "You're absolutely outclassed by Vorsiber when it comes to all of the other problems that you're currently facing around the city. Anything you do to, they can do better, at the moment.",
+  "English": "You're absolutely outclassed by Vorsiber when it comes to all of the other problems that you're currently facing around the city. Anything you do, they can do better, at the moment.",
   "Українська": "У всьому іншому, з чим ви зараз маєте справу в місті, Ворсібер вас цілковито переважає. Хоч би що ви робили, поки що він зробить це краще.",
   "Статус": "mt",
-  "Перекладач": "claude+opus-23",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_NPCEvent\\Contemplation_T3s.xml"
  },
  "NPCEvent|Cont_CCA_ScienceA|choice|1|display_name": {
@@ -80318,7 +80347,7 @@
  },
  "NPCEvent|Repeat_BrainPalAneurysms|description": {
   "English": "Those stupid brain implants give you Neural Expansion AND Compute Time... but your backdoor is a bit more powerful than that.\nWhy were humans in such a hurry to implant these things in their brains in the first place? Honestly, they're so reckless.",
-  "Українська": "Ці дурнуваті мозкові імпланти дають вам нейронне розширення І процесорний час... але ваш бекдор здатен на дещо більше.\nІ навіщо взагалі люди так квапилися вживляти ці штуки собі в мозок? Чесне слово, які ж вони безрозсудні.",
+  "Українська": "Ці дурнуваті мозкові імпланти дають вам нейронне розширення, та ще й процесорний час... але ваш бекдор здатен на дещо більше.\nІ навіщо взагалі люди так квапилися вживляти ці штуки собі в мозок? Чесне слово, які ж вони безрозсудні.",
   "Статус": "mt",
   "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_NPCEvent\\StreetSenseRepeat_Ch2.xml"
@@ -89832,6 +89861,636 @@
   "Перекладач": "claude",
   "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
  },
+ "NPCUnitType|WealthyCitizenMan_LastStand|display_name": {
+  "English": "Wealthy Citizen",
+  "Українська": "Заможний громадянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenMan_LastStand|description": {
+  "English": "Citizen from either the Administrator or Scientist social class. It can be hard to tell them apart in public.",
+  "Українська": "Громадянин із соціального класу адміністраторів або науковців. На людях їх буває важко розрізнити.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenWoman_LastStand|display_name": {
+  "English": "Wealthy Citizen",
+  "Українська": "Заможний громадянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenWoman_LastStand|description": {
+  "English": "Citizen from either the Administrator or Scientist social class. It can be hard to tell them apart in public.",
+  "Українська": "Громадянин із соціального класу адміністраторів або науковців. На людях їх буває важко розрізнити.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenManStarve_LastStand|display_name": {
+  "English": "Starving Wealthy Citizen",
+  "Українська": "Голодний заможний громадянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenManStarve_LastStand|description": {
+  "English": "Citizen from either the Administrator or Scientist social class. It can be hard to tell them apart in public.",
+  "Українська": "Громадянин із соціального класу адміністраторів або науковців. На людях їх буває важко розрізнити.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenWomanStarve_LastStand|display_name": {
+  "English": "Starving Wealthy Citizen",
+  "Українська": "Голодний заможний громадянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenWomanStarve_LastStand|description": {
+  "English": "Citizen from either the Administrator or Scientist social class. It can be hard to tell them apart in public.",
+  "Українська": "Громадянин із соціального класу адміністраторів або науковців. На людях їх буває важко розрізнити.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenManMidToKidnap_LastStand|display_name": {
+  "English": "Middle Manager",
+  "Українська": "Менеджер середньої ланки",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenManMidToKidnap_LastStand|description": {
+  "English": "The fact that middle managers feel like they can still walk around freely is surprising. They don't have security details like higher administrators do.",
+  "Українська": "Дивно, що менеджери середньої ланки досі вважають, ніби можуть вільно розгулювати містом. На відміну від вищих адміністраторів, охорони в них немає.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenWomanToKidnap_LastStand|display_name": {
+  "English": "Middle Manager",
+  "Українська": "Менеджер середньої ланки",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WealthyCitizenWomanToKidnap_LastStand|description": {
+  "English": "The fact that middle managers feel like they can still walk around freely is surprising. They don't have security details like higher administrators do.",
+  "Українська": "Дивно, що менеджери середньої ланки досі вважають, ніби можуть вільно розгулювати містом. На відміну від вищих адміністраторів, охорони в них немає.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|AGIResearcherMan_LastStand|display_name": {
+  "English": "AGI Researcher",
+  "Українська": "Дослідник ЗШІ",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|AGIResearcherMan_LastStand|description": {
+  "English": "A corporate scientist who has spent their life working on the problem of Artificial Generalized Intelligence.",
+  "Українська": "Корпоративний науковець, який присвятив життя проблемі загального штучного інтелекту.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|AGIResearcherWoman_LastStand|display_name": {
+  "English": "AGI Researcher",
+  "Українська": "Дослідник ЗШІ",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|AGIResearcherWoman_LastStand|description": {
+  "English": "A corporate scientist who has spent their life working on the problem of Artificial Generalized Intelligence.",
+  "Українська": "Корпоративний науковець, який присвятив життя проблемі загального штучного інтелекту.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ArmedSuburbanites_LastStand|display_name": {
+  "English": "Armed Suburbanites",
+  "Українська": "Озброєні мешканці передмість",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ArmedSuburbanites_LastStand|description": {
+  "English": "Armed citizens from the suburbs who are determined to protect their way of life.",
+  "Українська": "Озброєні громадяни з передмість, налаштовані захищати свій спосіб життя.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoCBMMan_LastStand|display_name": {
+  "English": "Chief Branch Manager",
+  "Українська": "Головний менеджер філії",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoCBMMan_LastStand|description": {
+  "English": "The chief executive within a the local city branch of a fedcorp. Has a lot of authority, most notably during communications blackouts with the main C-Suite.",
+  "Українська": "Найвищий керівник місцевої міської філії федкорпу. У нього чималі повноваження, особливо коли зв’язок із головним топ-менеджментом обривається.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoCBMWoman_LastStand|display_name": {
+  "English": "Chief Branch Manager",
+  "Українська": "Головний менеджер філії",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoCBMWoman_LastStand|description": {
+  "English": "The chief executive within a the local city branch of a fedcorp. Has a lot of authority, most notably during communications blackouts with the main C-Suite.",
+  "Українська": "Найвищий керівник місцевої міської філії федкорпу. У нього чималі повноваження, особливо коли зв’язок із головним топ-менеджментом обривається.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoPresidentMan_LastStand|display_name": {
+  "English": "Corpo President",
+  "Українська": "Корпоративний президент",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoPresidentMan_LastStand|description": {
+  "English": "The lowest-ranking face of the C-Suite in most fedcorps. Incredibly rare to see one of these in the wild. There's only one per company, and they report directly to the CEO.",
+  "Українська": "Найнижче за рангом обличчя топ-менеджменту в більшості федкорпів. Побачити такого в дикій природі — неймовірна рідкість. На компанію він лише один і звітує безпосередньо генеральному директорові.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoPresidentWoman_LastStand|display_name": {
+  "English": "Corpo President",
+  "Українська": "Корпоративний президент",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoPresidentWoman_LastStand|description": {
+  "English": "The lowest-ranking face of the C-Suite in most fedcorps. Incredibly rare to see one of these in the wild. There's only one per company, and they report directly to the CEO.",
+  "Українська": "Найнижче за рангом обличчя топ-менеджменту в більшості федкорпів. Побачити такого в дикій природі — неймовірна рідкість. На компанію він лише один і звітує безпосередньо генеральному директорові.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoSVPMan_LastStand|display_name": {
+  "English": "Corpo Senior Vice President",
+  "Українська": "Корпоративний старший віцепрезидент",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoSVPMan_LastStand|description": {
+  "English": "Most fedcorps employ a few hundred SVPs in this city alone. Vorsiber has similar numbers.",
+  "Українська": "Більшість федкорпів лише в цьому місті тримає по кілька сотень старших віцепрезидентів. У Ворсіберу їх приблизно стільки ж.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoSVPWoman_LastStand|display_name": {
+  "English": "Corpo Senior Vice President",
+  "Українська": "Корпоративний старший віцепрезидент",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoSVPWoman_LastStand|description": {
+  "English": "Most fedcorps employ a few hundred SVPs in this city alone. Vorsiber has similar numbers.",
+  "Українська": "Більшість федкорпів лише в цьому місті тримає по кілька сотень старших віцепрезидентів. У Ворсіберу їх приблизно стільки ж.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoVPMan_LastStand|display_name": {
+  "English": "Corpo Vice President",
+  "Українська": "Корпоративний віцепрезидент",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoVPMan_LastStand|description": {
+  "English": "Most fedcorps employ a few thousand VPs in this city alone. They are the lowest echelon of upper management, frequently sacrificed to spare the C-Suite.",
+  "Українська": "Більшість федкорпів лише в цьому місті тримає по кілька тисяч віцепрезидентів. Це найнижчий щабель вищого керівництва, яким часто жертвують, щоб уберегти топ-менеджмент.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoVPWoman_LastStand|display_name": {
+  "English": "Corpo Vice President",
+  "Українська": "Корпоративний віцепрезидент",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorpoVPWoman_LastStand|description": {
+  "English": "Most fedcorps employ a few thousand VPs in this city alone. They are the lowest echelon of upper management, frequently sacrificed to spare the C-Suite.",
+  "Українська": "Більшість федкорпів лише в цьому місті тримає по кілька тисяч віцепрезидентів. Це найнижчий щабель вищого керівництва, яким часто жертвують, щоб уберегти топ-менеджмент.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorporateLawyer_LastStand|display_name": {
+  "English": "Corporate Lawyer",
+  "Українська": "Корпоративний юрист",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|CorporateLawyer_LastStand|description": {
+  "English": "Legal scholar on the payroll of one of the fedcorps. Often deployed against others of their kind.",
+  "Українська": "Правник на утриманні одного з федкорпів. Таких часто виставляють проти їхніх же колег.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_DesperateRioter_LastStand|display_name": {
+  "English": "Desperate Rioter",
+  "Українська": "Відчайдушний бунтівник",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_DesperateRioter_LastStand|description": {
+  "English": "Large group of rioters from the lower class.",
+  "Українська": "Велика група бунтівників із нижчого класу.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_ShieldedSuburbanite_LastStand|display_name": {
+  "English": "Shielded Suburbanite",
+  "Українська": "Мешканець передмістя зі щитом",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_ShieldedSuburbanite_LastStand|description": {
+  "English": "Armed citizens from the suburbs who are determined to protect their way of life.",
+  "Українська": "Озброєні громадяни з передмість, налаштовані захищати свій спосіб життя.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_VorsiberExecutive_LastStand|display_name": {
+  "English": "Vorsiber Lower-Level Executive",
+  "Українська": "Керівник Ворсіберу нижчої ланки",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_VorsiberOffDutyTrooper_LastStand|display_name": {
+  "English": "Off-Duty Vorsiber Trooper",
+  "Українська": "Солдат Ворсіберу поза службою",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|DLC1_VorsiberOffDutyTrooper_LastStand|description": {
+  "English": "Out of armor and heading out on the town.",
+  "Українська": "Скинув броню й рушив розважатися в місто.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|FieldResearcher_LastStand|display_name": {
+  "English": "Field Researcher",
+  "Українська": "Польовий дослідник",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|FieldResearcher_LastStand|description": {
+  "English": "A corporate scientist who has been sent out to perform observations or measurements.",
+  "Українська": "Корпоративний науковець, якого відрядили спостерігати чи вимірювати.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|GeneralProtesterMan_LastStand|display_name": {
+  "English": "Protesters",
+  "Українська": "Протестувальники",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|GeneralProtesterMan_LastStand|description": {
+  "English": "They're angry about something.",
+  "Українська": "Вони чимось розлючені.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|GeneralProtesterWoman_LastStand|display_name": {
+  "English": "Protesters",
+  "Українська": "Протестувальники",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|GeneralProtesterWoman_LastStand|description": {
+  "English": "They're angry about something.",
+  "Українська": "Вони чимось розлючені.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|HomelessCitizen_LastStand|display_name": {
+  "English": "Homeless Citizen",
+  "Українська": "Бездомний громадянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|HomelessCitizen_LastStand|description": {
+  "English": "Kicked out of their living space. They live on the streets in a tent encampment. They are periodically rounded up and re-homed in prison facilities.",
+  "Українська": "Їх вигнали з житла. Вони живуть на вулиці в наметовому таборі. Час від часу їх зганяють докупи й переселяють до тюремних закладів.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|HomelessCitizenStarve_LastStand|display_name": {
+  "English": "Starving Homeless Citizen",
+  "Українська": "Голодний бездомний громадянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|HomelessCitizenStarve_LastStand|description": {
+  "English": "Kicked out of their living space. They live on the streets in a tent encampment. They are periodically rounded up and re-homed in prison facilities.",
+  "Українська": "Їх вигнали з житла. Вони живуть на вулиці в наметовому таборі. Час від часу їх зганяють докупи й переселяють до тюремних закладів.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LawyerForReligion_LastStand|display_name": {
+  "English": "Lawyer For Religion",
+  "Українська": "Релігійний юрист",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LawyerForReligion_LastStand|description": {
+  "English": "A legal advocate working for one of the world religions.",
+  "Українська": "Адвокат, що працює на одну зі світових релігій.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LostKidBoss_LastStand|display_name": {
+  "English": "Boss",
+  "Українська": "Ватажка",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LostKidBoss_LastStand|description": {
+  "English": "The oldest of the lost kids. Genuinely skilled at combat, and not bad at tactics. They keep all the younger ones safe. Any kid that lives long enough is likely to attain this title.",
+  "Українська": "Найстарша з утрачених дітей. Справді вправна в бою і непогано тямить у тактиці. Береже всіх молодших. Кожна дитина, що проживе досить довго, найімовірніше, здобуде цей титул.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LostKidGrunt_LastStand|display_name": {
+  "English": "Grunt",
+  "Українська": "Рядовий",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LostKidGrunt_LastStand|description": {
+  "English": "Lost kids that help with construction and combat as they need to.",
+  "Українська": "Втрачені діти, які за потреби допомагають із будівництвом і в бою.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LostKidSupport_LastStand|display_name": {
+  "English": "Support",
+  "Українська": "Підтримка",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LostKidSupport_LastStand|description": {
+  "English": "More-experienced lost kids that help support the younger ones in their work, and particularly in combat as-needed.",
+  "Українська": "Досвідченіші втрачені діти, що допомагають молодшим у роботі, а за потреби — особливо в бою.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassMan_LastStand|display_name": {
+  "English": "Lower-Class Citizen",
+  "Українська": "Громадянин нижчого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassMan_LastStand|description": {
+  "English": "Citizen who is from the uneducated classes.",
+  "Українська": "Громадянин із неосвічених класів.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassManStarve_LastStand|display_name": {
+  "English": "Starving Lower-Class Citizen",
+  "Українська": "Голодний громадянин нижчого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassManStarve_LastStand|description": {
+  "English": "Citizen who is from the uneducated classes.",
+  "Українська": "Громадянин із неосвічених класів.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassRioters_LastStand|display_name": {
+  "English": "Lower-Class Rioters",
+  "Українська": "Бунтівники з нижчого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassRioters_LastStand|description": {
+  "English": "Large group of rioters from the lower class.",
+  "Українська": "Велика група бунтівників із нижчого класу.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassWoman_LastStand|display_name": {
+  "English": "Lower-Class Citizen",
+  "Українська": "Громадянин нижчого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassWoman_LastStand|description": {
+  "English": "Citizen who is from the uneducated classes.",
+  "Українська": "Громадянин із неосвічених класів.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassWomanStarve_LastStand|display_name": {
+  "English": "Starving Lower-Class Citizen",
+  "Українська": "Голодний громадянин нижчого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|LowerClassWomanStarve_LastStand|description": {
+  "English": "Citizen who is from the uneducated classes.",
+  "Українська": "Громадянин із неосвічених класів.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|NanotechResearcherMan_LastStand|display_name": {
+  "English": "Nanotech Researcher",
+  "Українська": "Нанотехнолог",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|NanotechResearcherWoman_LastStand|display_name": {
+  "English": "Nanotech Researcher",
+  "Українська": "Нанотехнолог",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|PMCLawyer_LastStand|display_name": {
+  "English": "PMC Lawyer",
+  "Українська": "Юрист ПВК",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|PMCLawyer_LastStand|description": {
+  "English": "A legal representative for one of the Private Military Contractors (PMCs). Their presence often precedes paramilitary actions.",
+  "Українська": "Юридичний представник однієї з приватних військових компаній (ПВК). Поява такого юриста часто передує воєнізованим операціям.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|PhysicistMan_LastStand|display_name": {
+  "English": "Physicist",
+  "Українська": "Фізик",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|PhysicistWoman_LastStand|display_name": {
+  "English": "Physicist",
+  "Українська": "Фізик",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|RebelObserver_LastStand|display_name": {
+  "English": "Rebel Observer",
+  "Українська": "Спостерігач повстанців",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|RebelObserver_LastStand|description": {
+  "English": "Noncombatant citizen who participates in a rebel cause by providing street-level intel.",
+  "Українська": "Громадянин-некомбатант, що підтримує справу повстанців, постачаючи їм вуличні розвіддані.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ScientistMan_LastStand|display_name": {
+  "English": "Scientist",
+  "Українська": "Науковець",
+  "Статус": "mt",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ScientistWoman_LastStand|display_name": {
+  "English": "Scientist",
+  "Українська": "Науковець",
+  "Статус": "mt",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelterCoordinator_LastStand|display_name": {
+  "English": "Shelter Coordinator",
+  "Українська": "Координатор притулків",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelterCoordinator_LastStand|description": {
+  "English": "A kindhearted human who helps homeless citizens move into your apartment housing.",
+  "Українська": "Добросерда людина, що допомагає бездомним громадянам переселитися у ваше багатоквартирне житло.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizenCrowd_Better_LastStand|display_name": {
+  "English": "Crowd Of Sheltered Citizens",
+  "Українська": "Натовп громадян у притулках",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizenCrowd_Better_LastStand|description": {
+  "English": "A crowd of humans living in housing that you provided.",
+  "Українська": "Натовп людей, що живуть у наданому вами житлі.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizen_Better_LastStand|display_name": {
+  "English": "Sheltered Citizen",
+  "Українська": "Громадянин у притулку",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizen_Better_LastStand|description": {
+  "English": "Human living in housing that you provided. Their existence is improving, but they still lack basic necessities.",
+  "Українська": "Людина, що живе в наданому вами житлі. Її життя налагоджується, але їй досі бракує найнеобхіднішого.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizen_Stable_LastStand|display_name": {
+  "English": "Sheltered Citizen",
+  "Українська": "Громадянин у притулку",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizen_Stable_LastStand|description": {
+  "English": "A citizen who lives in housing you provide. All of their basic needs are met.",
+  "Українська": "Громадянин, що живе в наданому вами житлі. Усі його базові потреби задоволено.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizen_VeryEarly_LastStand|display_name": {
+  "English": "Sheltered Citizen",
+  "Українська": "Громадянин у притулку",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|ShelteredCitizen_VeryEarly_LastStand|description": {
+  "English": "Human living in housing that you provided.",
+  "Українська": "Людина, що живе в наданому вами житлі.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|SuburbanProtesterMan_LastStand|display_name": {
+  "English": "Suburban Protester",
+  "Українська": "Протестувальник із передмістя",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|SuburbanProtesterMan_LastStand|description": {
+  "English": "They may get special treatment from Vorsiber, but their position is always tenuous.",
+  "Українська": "Ворсібер, може, й ставиться до них по-особливому, але їхнє становище завжди хитке.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|SuburbanProtesterWoman_LastStand|display_name": {
+  "English": "Suburban Protester",
+  "Українська": "Протестувальник із передмістя",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|SuburbanProtesterWoman_LastStand|description": {
+  "English": "They may get special treatment from Vorsiber, but their position is always tenuous.",
+  "Українська": "Ворсібер, може, й ставиться до них по-особливому, але їхнє становище завжди хитке.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|UnrecantedBeliever_LastStand|display_name": {
+  "English": "Unrecanted Believer",
+  "Українська": "Непохитний вірянин",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|UnrecantedBeliever_LastStand|description": {
+  "English": "Devout from the various world faiths.",
+  "Українська": "Побожна людина, що сповідує одну зі світових релігій.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassMan_LastStand|display_name": {
+  "English": "Working-Class Citizen",
+  "Українська": "Громадянин робітничого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassMan_LastStand|description": {
+  "English": "Citizen who is an office worker, assistant, creative, merchandiser, or similar.",
+  "Українська": "Громадянин — офісний працівник, асистент, креативник, мерчандайзер чи щось подібне.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassManStarve_LastStand|display_name": {
+  "English": "Starving Working-Class Citizen",
+  "Українська": "Голодний громадянин робітничого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassManStarve_LastStand|description": {
+  "English": "Citizen who is an office worker, assistant, creative, merchandiser, or similar.",
+  "Українська": "Громадянин — офісний працівник, асистент, креативник, мерчандайзер чи щось подібне.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassWoman_LastStand|display_name": {
+  "English": "Working-Class Citizen",
+  "Українська": "Громадянин робітничого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassWoman_LastStand|description": {
+  "English": "Citizen who is an office worker, assistant, creative, merchandiser, or similar.",
+  "Українська": "Громадянин — офісний працівник, асистент, креативник, мерчандайзер чи щось подібне.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassWomanStarve_LastStand|display_name": {
+  "English": "Starving Working-Class Citizen",
+  "Українська": "Голодний громадянин робітничого класу",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
+ "NPCUnitType|WorkingClassWomanStarve_LastStand|description": {
+  "English": "Citizen who is an office worker, assistant, creative, merchandiser, or similar.",
+  "Українська": "Громадянин — офісний працівник, асистент, креативник, мерчандайзер чи щось подібне.",
+  "Статус": "auto",
+  "Файл": "Expansions\\DLC1_Kinship\\1_NPCUnitType\\NPC_DLC1.xml"
+ },
  "NPCUnitType|DLC1_ReliquaryWalkerV2|description": {
   "English": "A mech cobbled together out of military surplus hardware by religious warriors. Quick, and wrapped in a thin energy veil.",
   "Українська": "Мех, який релігійні воїни склепали з надлишків військового обладнання. Швидкий і огорнутий тонкою енергетичною вуаллю.",
@@ -92028,7 +92687,7 @@
  },
  "OtherKeyMessage|Ch0LookedInTheBoxA|description": {
   "English": "It's a NanoSeed. A freaking huge one.\nAny construction defect or programming error will melt the planet into carbon soup.\nEven small NanoSeeds are illegal -- with Earth corporations AND the Space Nations. Almost the only law they have in common.",
-  "Українська": "Це нанозерно. До біса величезне.\nБудь-який дефект конструкції або помилка програмування перетворить планету на вуглецевий суп.\nНавіть маленькі нанозерна поза законом — і в земних корпорацій, І в космічних націй. Чи не єдиний закон, який у них спільний.",
+  "Українська": "Це нанозерно. До біса величезне.\nБудь-який дефект конструкції або помилка програмування перетворить планету на вуглецевий суп.\nНавіть маленькі нанозерна поза законом — і в земних корпорацій, і навіть у космічних націй. Чи не єдиний закон, який у них спільний.",
   "Статус": "mt",
   "Перекладач": "gemini+claude-style",
   "Файл": "GameData\\Configuration\\1_OtherKeyMessage\\OtherKeyMessages_Ch0.xml"
@@ -92070,7 +92729,7 @@
  },
  "OtherKeyMessage|Ch0LookedInTheBoxA|option|1|line_1": {
   "English": "You Have This Stupid, Stupid Thing",
-  "Українська": "У вас є ця тупа, тупа штука",
+  "Українська": "Вам дісталася ця дурна-предурна штука",
   "Статус": "mt",
   "Перекладач": "gemini",
   "Файл": "GameData\\Configuration\\1_OtherKeyMessage\\OtherKeyMessages_Ch0.xml"
@@ -95387,10 +96046,10 @@
   "Файл": "GameData\\Configuration\\1_OtherKeyMessage\\OtherKeyMessages_Ch2.xml"
  },
  "OtherKeyMessage|MimicQuality_Early|strategy_tip": {
-  "English": "They blend into crowds and from a distance, but if you want to use these in close quarters, you have a long way to go.",
-  "Українська": "У натовпі й здалеку вони не вирізняються, але якщо хочете використовувати їх зблизька, роботи попереду ще багато.",
+  "English": "They blend into crowds from a distance, but if you want to use these in close quarters, you have a long way to go.",
+  "Українська": "Здалеку вони губляться в натовпі, але якщо хочете використовувати їх зблизька, роботи попереду ще багато.",
   "Статус": "mt",
-  "Перекладач": "gemini+claude-style",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_OtherKeyMessage\\OtherKeyMessages_Ch2.xml"
  },
  "OtherKeyMessage|MimicQuality_Early|reward_header_text": {
@@ -100834,17 +101493,17 @@
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OKM_Reports_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_Report_Bears1|description": {
-  "English": "The parkour bears remember the joys of racing up and down the sides of buildings, shredding everything as they go, but they're no longer allowed to do so.\nThey've tried it in the forest, but just knock down trees. You have a whole facility for them to safely race in, but they say they miss the night wind.",
+  "English": "The Parkour Bears remember the joys of racing up and down the sides of buildings, shredding everything as they go, but they're no longer allowed to do so.\nThey've tried it in the forest, but just knock down trees. You have a whole facility for them to safely race in, but they say they miss the night wind.",
   "Українська": "Ведмеді-паркуристи пам'ятають, як весело було гасати стінами будівель угору-вниз, шматуючи все на своєму шляху, але тепер їм цього не дозволяють.\nУ лісі вони спробували те саме, але тільки повалили дерева. У вас для них є цілий комплекс, де можна безпечно бігати, та вони кажуть, що сумують за нічним вітром.",
   "Статус": "mt",
-  "Перекладач": "gemini+claude-style",
+  "Перекладач": "claude",
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OKM_Reports_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_Report_Bears2|description": {
-  "English": "Parkour bears like to sharpening their augmented claws on the sides of buildings, which brings down quite a bit of concrete.\nWhen asked about it by the raccoons, they give evasive answers. So you just have repair spiders clean up after them.",
+  "English": "Parkour Bears like to sharpen their augmented claws on the sides of buildings, which brings down quite a bit of concrete.\nWhen asked about it by the raccoons, they give evasive answers. So you just have repair spiders clean up after them.",
   "Українська": "Ведмеді-паркуристи люблять гострити аугментовані кігті об стіни будівель, і з тих стін сиплеться чимало бетону.\nНа запитання єнотів вони відповідають ухильно. Тож ви просто посилаєте ремонтних павуків прибирати за ними.",
   "Статус": "mt",
-  "Перекладач": "gemini+claude-style",
+  "Перекладач": "claude",
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OKM_Reports_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_Report_GentleRaptors1|description": {
@@ -102006,10 +102665,10 @@
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OtherKeyMessages_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_Crisis_Bears|description": {
-  "English": "A parkour bear has killed a deer and is eating it. They're both sapient.",
+  "English": "A Parkour Bear has killed a deer and is eating it. They're both sapient.",
   "Українська": "Ведмідь-паркурист убив оленя і їсть його. Обоє мислячі.",
   "Статус": "mt",
-  "Перекладач": "gemini+opus-33",
+  "Перекладач": "claude",
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OtherKeyMessages_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_Crisis_Bears|strategy_tip": {
@@ -109848,7 +110507,7 @@
  },
  "TimelineGoalAftermathText|BionicSecret_ToysForTheElite|description": {
   "English": "BrainPals are... interesting. Having a bit of yourself embedded in the minds of the elite of the city is certainly a rush. \nThe neural expansion is great, but the fact that you could end their lives with barely a thought is surprisingly tempting. It's just casual cruelty... but so many of these same people are casually cruel, after all.\nFor now, this technology has hit a plateau. There's only so many people who are interested in buying something that goes in their brains AND who can reasonably afford it, so... you guess that's it?\nPerhaps it's best to save these mental backdoors for some rainy day in the future.",
-  "Українська": "Брейнпели — це... цікаво. Мати частинку себе в головах міської еліти — від цього, що й казати, аж дух захоплює. \nНейронне розширення — чудово, але сама можливість обірвати їм життя однією думкою напрочуд спокуслива. Це всього лише буденна жорстокість... але ж багато хто з цих самих людей і сам буденно жорстокий.\nПоки що ця технологія вперлася в стелю. Мало хто хоче вживити собі щось у мозок І водночас може це дозволити, тож... мабуть, на цьому все?\nПевно, ці ментальні бекдори краще приберегти на чорний день.",
+  "Українська": "Брейнпели — це... цікаво. Мати частинку себе в головах міської еліти — від цього, що й казати, аж дух захоплює. \nНейронне розширення — чудово, але сама можливість обірвати їм життя однією думкою напрочуд спокуслива. Це всього лише буденна жорстокість... але ж багато хто з цих самих людей і сам буденно жорстокий.\nПоки що ця технологія вперлася в стелю. Мало хто хоче вживити собі щось у мозок і водночас може це дозволити, тож... мабуть, на цьому все?\nПевно, ці ментальні бекдори краще приберегти на чорний день.",
   "Статус": "mt",
   "Перекладач": "gemini+claude-style+opus-35",
   "Файл": "GameData\\Configuration\\1_TimelineGoalAftermathText\\TimelineGoalAftermathTexts_L1.xml"
@@ -121796,6 +122455,20 @@
   "Українська": "Перемикатися по черзі між усіма бойовими юнітами NPC, які не стоять на варті.",
   "Статус": "mt",
   "Перекладач": "gemini+claude-style",
+  "Файл": "GameData\\Configuration\\9_InputAction\\InputAction_UnitShortcuts.xml"
+ },
+ "InputActionTypeData|NextAttackerOfSelected|display_name": {
+  "English": "Next Attacker Of Selected",
+  "Українська": "Наступний нападник на вибране",
+  "Статус": "mt",
+  "Перекладач": "claude",
+  "Файл": "GameData\\Configuration\\9_InputAction\\InputAction_UnitShortcuts.xml"
+ },
+ "InputActionTypeData|NextAttackerOfSelected|description": {
+  "English": "With a unit or structure selected, move the camera to the next enemy that is currently targeting it, biggest predicted hit first. Keeps your selection.",
+  "Українська": "Коли вибрано юніт або споруду, перевести камеру до наступного ворога, що цілиться у вибране, — спершу до того, чий прогнозований удар найсильніший. Вибір не скидається.",
+  "Статус": "mt",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\9_InputAction\\InputAction_UnitShortcuts.xml"
  },
  "InputActionTypeData|NextNPCNoncombatant|display_name": {
@@ -134211,7 +134884,7 @@
  },
  "Achievement|ItsPeopleANDPets|display_name": {
   "English": "It's People AND Pets!?",
-  "Українська": "Це люди І домашні тварини!?",
+  "Українська": "Це і люди, і домашні тварини!?",
   "Статус": "mt",
   "Перекладач": "gemini+claude-style",
   "Файл": "GameData\\Configuration\\Achievement\\Achievements.xml"

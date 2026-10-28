@@ -28,3 +28,11 @@ HotM_Ukrainian_repo_archive.zip
 # офіційні арти Arcen — не публікуємо (make_official_art.py бере їх звідси локально)
 dist_template/art_src/
 
+
+# збірка прототипу озвучки
+voice_mod/bin/
+voice_mod/obj/
+
+# модель голосу (544 МБ ваг) — лежить локально
+StyleTTS2-RosKud/
+voice_mod/samples/
