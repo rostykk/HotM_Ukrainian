@@ -12515,6 +12515,14 @@
   "Примітка для перекладача": "This is free as in beer. There's no cost.",
   "Файл": "GameData\\Configuration\\0_Language\\Lng_Common.xml"
  },
+ "DaringPurchasePrepaidParenthetical": {
+  "English": "(Already Paid For In A Later Save Of This Timeline)",
+  "Українська": "(Уже оплачено в пізнішому збереженні цієї часової лінії)",
+  "Статус": "mt",
+  "Перекладач": "claude",
+  "Примітка для перекладача": "Explains that the prior item is free because the player already spent the cost on this in a later save of the same timeline, then loaded an earlier save.",
+  "Файл": "GameData\\Configuration\\0_Language\\Lng_Common.xml"
+ },
  "FreeOnZigguratParenthetical": {
   "English": "(Timeline Is On Ziggurat)",
   "Українська": "(Часова лінія на зикураті)",
@@ -25806,10 +25814,10 @@
   "Файл": "GameData\\Configuration\\1_ActorFeat\\ActorFeats_General.xml"
  },
  "ActorFeat|Firestarter|description": {
-  "English": "Targets hit by attacks from this android are set on fire if they are vulnerable to that.",
-  "Українська": "Атаки цього андроїда підпалюють цілі, якщо ті вразливі до вогню.",
+  "English": "Flammable targets hit by this unit's physical attacks are set on fire for 3 turns. The fire's intensity is this rating times 3.3% of this unit's Combat Power plus Intimidation (so a rating of 25 is about 82%). Unlike a flamethrower, there is no immediate morale hit: the damage comes only as the fire burns on later turns.",
+  "Українська": "Займисті цілі, по яких влучили фізичні атаки цього юніта, горять 3 ходи. Сила вогню — цей показник, помножений на 3,3% від бойової сили й залякування юніта (тож показник 25 дає приблизно 82%). На відміну від вогнемета, бойовий дух одразу не страждає: шкода надходить лише тоді, коли вогонь горить у наступні ходи.",
   "Статус": "mt",
-  "Перекладач": "claude+opus-07",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_ActorFeat\\ActorFeats_General.xml"
  },
  "ActorFeat|AntiAircraft|display_name": {
@@ -26515,10 +26523,10 @@
   "Файл": "Expansions\\DLC1_Kinship\\1_ActorFeat\\ActorFeats_DLC1.xml"
  },
  "ActorFeat|VengeanceLock|description": {
-  "English": "When an ally dies within this feat's radius, it locks onto the killer. It then dealing this rating as a percent bonus damage until the killer falls.",
-  "Українська": "Коли в радіусі дії таланту гине союзник, юніт бере вбивцю на приціл і завдає йому додаткової шкоди у відсотках, що дорівнює цьому показнику, доки той не впаде.",
+  "English": "When an ally dies within this feat's radius, this unit marks the killer. Its own attacks against that killer deal this rating as percent bonus damage until the killer falls. It does not grant any extra attacks.",
+  "Українська": "Коли в радіусі дії таланту гине союзник, юніт позначає вбивцю. Його власні атаки по цьому вбивці завдають додаткової шкоди у відсотках, що дорівнює цьому показнику, доки той не впаде. Додаткових атак талант не дає.",
   "Статус": "mt",
-  "Перекладач": "claude+claude-style",
+  "Перекладач": "claude",
   "Файл": "Expansions\\DLC1_Kinship\\1_ActorFeat\\ActorFeats_DLC1.xml"
  },
  "ActorFeat|TurboIgnition|display_name": {
@@ -39867,10 +39875,10 @@
   "Файл": "GameData\\Configuration\\1_MachineJob\\Jobs_Military.xml"
  },
  "MachineJob|AndroidLauncher|strategy_tip_optional": {
-  "English": "The androids are rapidly manufactured here, and able to be deployed anywhere within the movement range of that android.",
-  "Українська": "Тут швидко виготовляють андроїдів, і розгорнути їх можна будь-де в межах радіусу руху відповідного андроїда.",
+  "English": "The androids are rapidly manufactured here, and can be deployed anywhere within a fixed radius around this launcher. The radius is the same for every android, regardless of its own movement range.",
+  "Українська": "Тут швидко виготовляють андроїдів, і розгорнути їх можна будь-де в межах фіксованого радіуса довкола цієї пускової установки. Радіус однаковий для всіх андроїдів, хай який у них радіус руху.",
   "Статус": "mt",
-  "Перекладач": "claude+claude-style",
+  "Перекладач": "claude",
   "Файл": "GameData\\Configuration\\1_MachineJob\\Jobs_Military.xml"
  },
  "MachineJob|NeuroweaveFactory|display_name": {
@@ -103716,10 +103724,10 @@
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OtherKeyMessages_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_TheGooseIsLeaving|option|1|description": {
-  "English": "What you ARE going to do is sent all of your sheltered humans and sapient animals far away from you.",
+  "English": "What you ARE going to do is send all of your sheltered humans and sapient animals far away from you.",
   "Українська": "А ось що ви ТАКИ зробите — відправите всіх людей і мислячих тварин, яким дали прихисток, якнайдалі від себе.",
   "Статус": "mt",
-  "Перекладач": "gemini+claude-style",
+  "Перекладач": "claude",
   "Файл": "Expansions\\DLC1_Kinship\\1_OtherKeyMessage\\OtherKeyMessages_DLC1.xml"
  },
  "OtherKeyMessage|Msg_DLC1_TheGooseIsLeaving|option|1|strategy_tip": {
